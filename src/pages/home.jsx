@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import profilePic from "../profile.jpeg";
 const Home = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-[#050a15] overflow-hidden">
@@ -22,9 +22,11 @@ const Home = () => {
         <div className="relative inline-block mb-10">
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden mx-auto border-4 border-[#d4af37] shadow-[0_0_40px_rgba(212,175,55,0.5)] transition-all duration-700 hover:scale-105 group ring-8 ring-yellow-500/10">
             <img 
-              src="/src/WhatsApp Image 2025-12-31 at 10.58.37.jpeg" 
-              alt="Abdelhakim Bougraine" 
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-duration-700"
+              
+  src={profilePic} 
+  alt="Abdelhakim Bougraine" 
+  className="w-full h-full object-cover transform group-hover:scale-110 transition-duration-700"
+
             />
           </div>
           {/* أيقونة الميدالية الصغير */}
